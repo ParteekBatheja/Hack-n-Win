@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="order.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>CampusFurbish</title>
+</head>
+<body>
+    <header>
+		<div class="header-container">
+			<div class="logo">
+				<img src=".\c (5)-Photoroom.png-Photoroom.png" alt="CampusFurbish Logo">
+                <label class="header-text">CampusFurbish</label>
+			</div>
+			<div class="header-right">  
+				<a href="../index.html"><button class="btn btn-primary">Home</button></a>
+                <a href="../login.html"><button class="btn btn-primary">Logout</button></a>
+			</div>
+		</div>
+	</header>
+    <section id="productDetails">
+        <!-- Product images carousel -->
+        <div id="imageCarousel">
+            <img src="./image (4).jpg" alt="Product Image">
+        </div>
+
+        <!-- Product details -->
+        <div id="detailsContainer">
+            <h2>Mobile</h2>
+            <h3>iPhone 15</h3>
+            <p>Brand: Apple</p>
+            <p>Model: 15 Pro</p>
+            <p>Listed on: March 2, 2024</p>
+            <p>Location: NC-1 Hostel</p>
+            <p>Description: iPhone 15 Pro just 2 weeks old with 100% battery health.</p>
+            <h3>Price: 90,000</h3>
+            <button id="buyButton">Buy Now</button>
+        </div>
+    </section>
+
+    <div id="orderModal" class="modal">
+        <!-- Order form goes here -->
+        <div class="modal-content">
+            <h2>Order Information</h2>
+            <form id="orderForm">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" required></textarea>
+
+                <label for="contactNumber">Contact Number:</label>
+                <input type="tel" id="contactNumber" name="contactNumber" required>
+
+                <label for="paymentMethod">Payment Method:</label>
+                <select id="paymentMethod" name="paymentMethod" required>
+                    <option value="creditCard">Credit Card</option>
+                    <option value="debitCard">Debit Card</option>
+                    <!-- Add more options as needed -->
+                </select>
+
+                <button type="submit">Place Order</button>
+                <button type="button" id="closeButton">Close</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="bottom-bar">
+        <div class="bottom-nav">
+            <div class="copyright">
+                <p>&copy; 2024 CampusFurbish. All rights reserved.</p>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+	</footer>
+
+    <script src="order.js"></script>
+</body>
+</html>
